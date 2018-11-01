@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = 'gemの説明'
   s.license     = 'MIT'
   s.test_files = Dir['spec/**/*']
-  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency %w( rspec-rails jquery-rails )
 
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
 

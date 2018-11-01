@@ -11,22 +11,22 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
 //= require activestorage
 //= require_tree .
 
 $(function() {
-  var inputKey, konamiCommand;
-  inputKey = [];
-  konamiCommand = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-  $(window).keyup(function(e) {
-    inputKey.push(e.keyCode);
-    if (inputKey.toString().indexOf(konamiCommand) >= 0) {
+  var inputKey = [];
+  var konamiCommand = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+ $(window).keyup(function(e) {
+   inputKey.push(e.keyCode);
+   if (inputKey.toString().indexOf(konamiCommand) >= 0) {
       alert("コナミコマンド発動！");
       $(".body-wrapper").addClass('konami');
       javascript:(function () {var s = document.createElement('script');
         s.setAttribute('src', 'http://fontbomb.ilex.ca/js/main.js');
         document.body.appendChild(s);}());
       inputKey = [];
-    }
-  });
+   }
+ });
 });
