@@ -5,3 +5,5 @@
 1. `$ rails s`
 1. http://localhost:3000/test_engine
 1. ↑↑↓↓←→←→BA
+
+* コナミコマンドで爆散するjsファイルはお借りしたものです。
